@@ -1,6 +1,2 @@
-import getFullBudgetObject from './9-getFullBudget.js';
-
-const fullBudget = getFullBudgetObject(20, 50, 10);
-
-console.log(fullBudget.getIncomeInDollars(fullBudget.income)); 
-console.log(fullBudget.getIncomeInEuros(fullBudget.income));  
+import getBudgetForCurrentYear from "./8-getBudgetCurrentYear";
+console.log(getBudgetForCurrentYear(2100, 5200, 1090));

@@ -1,11 +1,3 @@
-import { uploadPhoto, createUser } from './utils.js';
-
-export default function handleProfileSignup() {
-  Promise.all([uploadPhoto(), createUser()])
-    .then(([photo, user]) => {
-      console.log(`${photo.body} ${user.firstName} ${user.lastName}`);
-    })
-    .catch(() => {
-      console.log("Signup system offline");
-    });
+export default function getSumOfHoods(initialNumber = 34, expansion1989 = 89, expansion2019 = 19) {
+  return initialNumber + expansion1989 + expansion2019;
 }
