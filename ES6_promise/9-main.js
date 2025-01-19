@@ -1,5 +1,9 @@
+// 9-main.js
 import guardrail from './9-try';
 import divideFunction from './8-try';
 
-console.log(guardrail(() => { return divideFunction(10, 2)})); 
-console.log(guardrail(() => { return divideFunction(10, 0)}));
+// Testing with valid input
+console.log(guardrail(() => { return divideFunction(10, 2) }));
+
+// Testing with division by zero
+console.log(guardrail(() => { return divideFunction(10, 0) }));

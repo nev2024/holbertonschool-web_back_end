@@ -1,12 +1,6 @@
-export default function taskBlock(trueOrFalse) {
-  const task = false;
-  const task2 = true;
-
-  if (trueOrFalse) {
-    /* eslint-disable */
-      const task = false;
-      const task2 = true;
-}
-
-  return [task, task2];
+export default function getFullResponseFromAPI(success) {
+	return new Promise((resolve, reject) => {
+		if (success) resolve({ status: 200, body: 'Success' });
+		else reject(new Error('The fake API is not working currently'));
+	});
 }

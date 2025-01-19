@@ -1,3 +1,14 @@
-export default function getSumOfHoods(initialNumber = 34, expansion1989 = 89, expansion2019 = 19) {
-  return initialNumber + expansion1989 + expansion2019;
+/*eslint-disable*/
+import { uploadPhoto, createUser } from "./utils";
+
+function handleProfileSignup() {
+	return Promise.all([uploadPhoto(), createUser()])
+		.then((Response) => {
+			console.log(
+				`${Response[0].body} ${Response[1].firstName} ${Response[1].lastName}`
+			);
+		})
+		.catch(() => console.log("Signup system offline"));
 }
+
+export default handleProfileSignup;

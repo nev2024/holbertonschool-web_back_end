@@ -1,3 +1,4 @@
-export default function concatArrays(array1, array2, string) {
-  return [...array1, ...array2, ...string];
+/*eslint-disable*/
+export default function uploadPhoto(filename) {
+  return Promise.reject(`Error: ${filename} cannot be processed`);
 }
