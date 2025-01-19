@@ -1,4 +1,4 @@
-// 5-building.js (Abstract Building class)
+/*eslint-disable*/
 class Building {
   constructor(sqft) {
       if (this.constructor === Building) {

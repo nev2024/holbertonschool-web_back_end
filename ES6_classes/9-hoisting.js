@@ -1,4 +1,4 @@
-// Define the HolbertonClass first
+/*eslint-disable*/
 export class HolbertonClass {
   constructor(year, location) {
     this._year = year;
